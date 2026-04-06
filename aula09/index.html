@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula-09 - Formularios</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            font-family: Arial, sans-serif;
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="number"], textarea, select {
+            width: 95%;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Formulario</h2>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" placeholder="Digite seu nome"></td>
+            </tr>
+            <tr>
+                <td>E-mail pessoal:</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>E-mail (pattern):</td>
+                <td><input type="email" placeholder="Digite seu email com @"></td>
+            </tr>
+            <tr>
+                <td>Senha:</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Idade:</td>
+                <td><input type="number" style="width: 50px;"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    Deixe um comentário:<br>
+                    <textarea rows="4"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Materia de interesse:<br>
+                    <input type="checkbox" id="back"> <label for="back">Backend</label><br>
+                    <input type="checkbox" id="front"> <label for="front">FrontEnd</label><br>
+                    <input type="checkbox" id="full"> <label for="full">FullStack</label>
+                </td>
+                <td>
+                    Tipo de Viagem:<br>
+                    <input type="radio" name="viagem" id="neg"> <label for="neg">Negócios</label><br>
+                    <input type="radio" name="viagem" id="laz"> <label for="laz">Lazer</label><br>
+                    <input type="radio" name="viagem" id="tur"> <label for="tur">Turismo</label><br>
+                    <input type="radio" name="viagem" id="aca"> <label for="aca">Acadêmico</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Esporte favorito:
+                    <select size="4" multiple>
+                        <option>Futebol</option>
+                        <option>Basquete</option>
+                        <option>Vôlei</option>
+                        <option>Tênis</option>
+                    </select>
+                </td>
+                <td>
+                    Investimentos: 
+                    <select>
+                        <option>Poupança</option>
+                        <option>CDB</option>
+                        <option>Tesouro Direto</option>
+                        <option>Fundos Imobiliários</option>
+                        <option>CDI</option>
+                        <option>DEBÊNTURES</option>
+                        <option>Criptomoedas</option>
+                        <option>Ações</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Escolha uma cor: <input type="color">
+                </td>
+                <td>
+                    Selecione um arquivo: <input type="file">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    Data e Hora envio: <input type="datetime-local">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="submit">Enviar</button>
+                </td>
+                <td>
+                    <button type="reset">Limpar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
